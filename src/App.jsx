@@ -2,7 +2,38 @@ import { useRef, useState } from 'react';
 import './App.css';
 import { Button, Card, CardContent, CardHeader, Carousel, CarouselItem, Dialog, Divider, IconButton } from 'ui-neumorphism';
 import 'ui-neumorphism/dist/index.css';
-import logo from './assets/fit-1.png'
+
+import photo from './assets/photo.png';
+
+import fit1 from './assets/fit-1.png';
+import fit2 from './assets/fit-2.png';
+import fit3 from './assets/fit-3.png';
+import fit4 from './assets/fit-4.png';
+import fit5 from './assets/fit-5.png';
+import fit6 from './assets/fit-6.png';
+import fit7 from './assets/fit-7.png';
+import fit8 from './assets/fit-8.png';
+import fit9 from './assets/fit-9.png';
+import fit10 from './assets/fit-10.png';
+import fit11 from './assets/fit-11.png';
+import fit12 from './assets/fit-12.png';
+import fit13 from './assets/fit-13.png';
+import fit14 from './assets/fit-14.png';
+
+import reelations1 from './assets/reelations-1.png';
+import reelations2 from './assets/reelations-2.png';
+import reelations3 from './assets/reelations-3.png';
+import reelations4 from './assets/reelations-4.png';
+import reelations5 from './assets/reelations-5.png';
+
+import mario1 from './assets/super-mario-1.png';
+import mario2 from './assets/super-mario-2.png';
+import mario3 from './assets/super-mario-3.png';
+import mario4 from './assets/super-mario-4.png';
+import mario5 from './assets/super-mario-5.png';
+import mario6 from './assets/super-mario-6.png';
+import mario7 from './assets/super-mario-7.png';
+
 
 function App() {
 
@@ -36,7 +67,7 @@ function App() {
 
       <div className='about' id='about-me'>
         <div className='photo'>
-          <img src='./src/assets/photo.png' alt='Profile image' />
+          <img src={photo} alt='Profile image' />
         </div>
         <div className='name'>
           <h2>ALEJANDRO MARTINEZ</h2>
@@ -82,7 +113,7 @@ function App() {
               <div className='col d-flex'>
                 <Card rounded={true} elevation={1} className='flex-fill d-flex flex-column' style={{ padding: '10px' }}>
                   <div className='img-container'>
-                    <img src={logo} alt='Fit Tracker' className='img-fluid' />
+                    <img src={fit1} alt='Fit Tracker' className='img-fluid' />
                   </div>
                   <CardHeader><b>Fit Tracker</b></CardHeader>
                   <CardContent className='flex-grow-1' style={{ textAlign: 'left' }}>
@@ -107,7 +138,7 @@ function App() {
               <div className='col d-flex'>
                 <Card rounded={true} elevation={1} className='flex-fill d-flex flex-column' style={{ padding: '10px' }}>
                   <div className='img-container'>
-                    <img src='./src/assets/reelations-1.png' alt='Reelations' className='img-fluid' />
+                    <img src={reelations1} alt='Reelations' className='img-fluid' />
                   </div>
                   <CardHeader><b>Reelations</b></CardHeader>
                   <CardContent className='flex-grow-1' style={{ textAlign: 'left' }}>
@@ -132,7 +163,7 @@ function App() {
               <div className='col d-flex'>
                 <Card rounded={true} elevation={1} className='flex-fill d-flex flex-column' style={{ padding: '10px' }}>
                   <div className='img-container'>
-                    <img src='./src/assets/super-mario-1.png' alt='Super Mario' className='img-fluid' />
+                    <img src={mario1} alt='Super Mario' className='img-fluid' />
                   </div>
                   <CardHeader><b>Super Mario</b></CardHeader>
                   <CardContent className='flex-grow-1' style={{ textAlign: 'left' }}>
@@ -164,42 +195,42 @@ function App() {
 
         {project.current === 'fit' && (
           <Carousel className={'w-100'} showArrows hideDelimiters nextIcon={<IconButton size='small' bgColor={'rgba(255,255,255,0.5'} bordered={true} rounded={true} text={true}><i className=" fa-solid fa-chevron-right fa-2xs" /></IconButton>} prevIcon={<IconButton style={{marginBottom: '17px'}} size='small' bgColor={'rgba(255,255,255,0.5'} bordered={true} rounded={true} text={true}><i className="fa-solid fa-chevron-right fa-2xs" /></IconButton>}>
-            <CarouselItem><img className='img-fluid h-100 object-fit-contain' src='./src/assets/fit-1.png' alt='fit tracker'></img></CarouselItem>
-            <CarouselItem><img className='img-fluid h-100 object-fit-contain' src='./src/assets/fit-2.png' alt='fit tracker'></img></CarouselItem>
-            <CarouselItem><img className='img-fluid h-100 object-fit-contain' src='./src/assets/fit-3.png' alt='fit tracker'></img></CarouselItem>
-            <CarouselItem><img className='img-fluid h-100 object-fit-contain' src='./src/assets/fit-4.png' alt='fit tracker'></img></CarouselItem>
-            <CarouselItem><img className='img-fluid h-100 object-fit-contain' src='./src/assets/fit-5.png' alt='fit tracker'></img></CarouselItem>
-            <CarouselItem><img className='img-fluid h-100 object-fit-contain' src='./src/assets/fit-6.png' alt='fit tracker'></img></CarouselItem>
-            <CarouselItem><img className='img-fluid h-100 object-fit-contain' src='./src/assets/fit-7.png' alt='fit tracker'></img></CarouselItem>
-            <CarouselItem><img className='img-fluid h-100 object-fit-contain' src='./src/assets/fit-8.png' alt='fit tracker'></img></CarouselItem>
-            <CarouselItem><img className='img-fluid h-100 object-fit-contain' src='./src/assets/fit-9.png' alt='fit tracker'></img></CarouselItem>
-            <CarouselItem><img className='img-fluid h-100 object-fit-contain' src='./src/assets/fit-10.png' alt='fit tracker'></img></CarouselItem>
-            <CarouselItem><img className='img-fluid h-100 object-fit-contain' src='./src/assets/fit-11.png' alt='fit tracker'></img></CarouselItem>
-            <CarouselItem><img className='img-fluid h-100 object-fit-contain' src='./src/assets/fit-12.png' alt='fit tracker'></img></CarouselItem>
-            <CarouselItem><img className='img-fluid h-100 object-fit-contain' src='./src/assets/fit-13.png' alt='fit tracker'></img></CarouselItem>
-            <CarouselItem><img className='img-fluid h-100 object-fit-contain' src='./src/assets/fit-14.png' alt='fit tracker'></img></CarouselItem>
+            <CarouselItem><img className='img-fluid h-100 object-fit-contain' src={fit1} alt='fit tracker'></img></CarouselItem>
+            <CarouselItem><img className='img-fluid h-100 object-fit-contain' src={fit2} alt='fit tracker'></img></CarouselItem>
+            <CarouselItem><img className='img-fluid h-100 object-fit-contain' src={fit3} alt='fit tracker'></img></CarouselItem>
+            <CarouselItem><img className='img-fluid h-100 object-fit-contain' src={fit4} alt='fit tracker'></img></CarouselItem>
+            <CarouselItem><img className='img-fluid h-100 object-fit-contain' src={fit5} alt='fit tracker'></img></CarouselItem>
+            <CarouselItem><img className='img-fluid h-100 object-fit-contain' src={fit6} alt='fit tracker'></img></CarouselItem>
+            <CarouselItem><img className='img-fluid h-100 object-fit-contain' src={fit7} alt='fit tracker'></img></CarouselItem>
+            <CarouselItem><img className='img-fluid h-100 object-fit-contain' src={fit8} alt='fit tracker'></img></CarouselItem>
+            <CarouselItem><img className='img-fluid h-100 object-fit-contain' src={fit9} alt='fit tracker'></img></CarouselItem>
+            <CarouselItem><img className='img-fluid h-100 object-fit-contain' src={fit10} alt='fit tracker'></img></CarouselItem>
+            <CarouselItem><img className='img-fluid h-100 object-fit-contain' src={fit11} alt='fit tracker'></img></CarouselItem>
+            <CarouselItem><img className='img-fluid h-100 object-fit-contain' src={fit12} alt='fit tracker'></img></CarouselItem>
+            <CarouselItem><img className='img-fluid h-100 object-fit-contain' src={fit13} alt='fit tracker'></img></CarouselItem>
+            <CarouselItem><img className='img-fluid h-100 object-fit-contain' src={fit14} alt='fit tracker'></img></CarouselItem>
           </Carousel>
         )}
 
         {project.current === 'reelations' && (
           <Carousel className={'w-100'} showArrows hideDelimiters nextIcon={<IconButton size='small' bgColor={'rgba(255,255,255,0.5'} bordered={true} rounded={true} text={true}><i className=" fa-solid fa-chevron-right fa-2xs" /></IconButton>} prevIcon={<IconButton style={{marginBottom: '17px'}} size='small' bgColor={'rgba(255,255,255,0.5'} bordered={true} rounded={true} text={true}><i className="fa-solid fa-chevron-right fa-2xs" /></IconButton>}>
-            <CarouselItem><img className='img-fluid h-100 object-fit-contain' src='./src/assets/reelations-1.png' alt='reelations'></img></CarouselItem>
-            <CarouselItem><img className='img-fluid h-100 object-fit-contain' src='./src/assets/reelations-2.png' alt='reelations'></img></CarouselItem>
-            <CarouselItem><img className='img-fluid h-100 object-fit-contain' src='./src/assets/reelations-3.png' alt='reelations'></img></CarouselItem>
-            <CarouselItem><img className='img-fluid h-100 object-fit-contain' src='./src/assets/reelations-4.png' alt='reelations'></img></CarouselItem>
-            <CarouselItem><img className='img-fluid h-100 object-fit-contain' src='./src/assets/reelations-5.png' alt='reelations'></img></CarouselItem>
+            <CarouselItem><img className='img-fluid h-100 object-fit-contain' src={reelations1} alt='reelations'></img></CarouselItem>
+            <CarouselItem><img className='img-fluid h-100 object-fit-contain' src={reelations2} alt='reelations'></img></CarouselItem>
+            <CarouselItem><img className='img-fluid h-100 object-fit-contain' src={reelations3} alt='reelations'></img></CarouselItem>
+            <CarouselItem><img className='img-fluid h-100 object-fit-contain' src={reelations4} alt='reelations'></img></CarouselItem>
+            <CarouselItem><img className='img-fluid h-100 object-fit-contain' src={reelations5} alt='reelations'></img></CarouselItem>
           </Carousel>
         )}
 
         {project.current === 'mario' && (
           <Carousel className={'w-100'} showArrows hideDelimiters nextIcon={<IconButton size='small' bgColor={'rgba(255,255,255,0.5'} bordered={true} rounded={true} text={true}><i className=" fa-solid fa-chevron-right fa-2xs" /></IconButton>} prevIcon={<IconButton style={{marginBottom: '17px'}} size='small' bgColor={'rgba(255,255,255,0.5'} bordered={true} rounded={true} text={true}><i className="fa-solid fa-chevron-right fa-2xs" /></IconButton>}>
-            <CarouselItem><img className='img-fluid h-100 object-fit-contain' src='./src/assets/super-mario-1.png' alt='super mario'></img></CarouselItem>
-            <CarouselItem><img className='img-fluid h-100 object-fit-contain' src='./src/assets/super-mario-2.png' alt='super mario'></img></CarouselItem>
-            <CarouselItem><img className='img-fluid h-100 object-fit-contain' src='./src/assets/super-mario-3.png' alt='super mario'></img></CarouselItem>
-            <CarouselItem><img className='img-fluid h-100 object-fit-contain' src='./src/assets/super-mario-4.png' alt='super mario'></img></CarouselItem>
-            <CarouselItem><img className='img-fluid h-100 object-fit-contain' src='./src/assets/super-mario-5.png' alt='super mario'></img></CarouselItem>
-            <CarouselItem><img className='img-fluid h-100 object-fit-contain' src='./src/assets/super-mario-6.png' alt='super mario'></img></CarouselItem>
-            <CarouselItem><img className='img-fluid h-100 object-fit-contain' src='./src/assets/super-mario-7.png' alt='super mario'></img></CarouselItem>
+            <CarouselItem><img className='img-fluid h-100 object-fit-contain' src={mario1} alt='super mario'></img></CarouselItem>
+            <CarouselItem><img className='img-fluid h-100 object-fit-contain' src={mario2} alt='super mario'></img></CarouselItem>
+            <CarouselItem><img className='img-fluid h-100 object-fit-contain' src={mario3} alt='super mario'></img></CarouselItem>
+            <CarouselItem><img className='img-fluid h-100 object-fit-contain' src={mario4} alt='super mario'></img></CarouselItem>
+            <CarouselItem><img className='img-fluid h-100 object-fit-contain' src={mario5} alt='super mario'></img></CarouselItem>
+            <CarouselItem><img className='img-fluid h-100 object-fit-contain' src={mario6} alt='super mario'></img></CarouselItem>
+            <CarouselItem><img className='img-fluid h-100 object-fit-contain' src={mario7} alt='super mario'></img></CarouselItem>
           </Carousel>
         )}
         
