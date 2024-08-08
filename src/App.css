@@ -1,0 +1,124 @@
+* {
+  font-family: 'Nunito Sans';
+  color: black;
+}
+
+body {
+  background-color: #EEF0F4;
+}
+
+nav {
+  box-shadow: 21.02px 21.02px 25px #C1C2C6, -21.02px -21.02px 25px #FFFFFF;
+  background-color: #EEF0F4;
+}
+
+a {
+  box-shadow: 21.02px 21.02px 25px #C1C2C6, -21.02px -21.02px 25px #FFFFFF;
+  padding: 0.5rem;
+  border-radius: 15px;
+  text-decoration: none !important;
+  color: black !important;
+  background-color: #EEF0F4;
+}
+
+a:active, a:focus {
+  box-shadow: inset 9.91px 9.91px 15px #D9DADE, inset -9.91px -9.91px 15px #FFFFFF;
+}
+
+.about {
+  margin-top: 40px;
+  box-shadow: inset 9.91px 9.91px 15px #D9DADE, inset -9.91px -9.91px 15px #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: 21.02px 21.02px 25px #C1C2C6, -21.02px -21.02px 25px #FFFFFF;
+  margin-top: 40px;
+  z-index: 100;
+  background-color: #EEF0F4;
+}
+
+.about img {
+  width: 200px;
+  height: 200px;
+  padding: 7px;
+  border-radius: 50%;
+}
+
+.name {
+  position: relative;
+  bottom: 90px;
+  box-shadow: 21.02px 21.02px 25px #C1C2C6, -21.02px -21.02px 25px #FFFFFF;
+  border-radius: 15px;
+  padding: 130px 10px 30px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+i {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+svg {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.projects {
+  margin-top: 40px;
+  box-shadow: inset 9.91px 9.91px 15px #D9DADE, inset -9.91px -9.91px 15px #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img-container {
+  height: 200px;
+  overflow: hidden; 
+}
+
+.img-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.projects a {
+  box-shadow: none;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 0;
+}
+
+.contact {
+  margin-top: 40px;
+  box-shadow: inset 9.91px 9.91px 15px #D9DADE, inset -9.91px -9.91px 15px #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact a {
+  box-shadow: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+footer {
+  box-shadow: 21.02px 21.02px 25px #C1C2C6, -21.02px -21.02px 25px #FFFFFF;
+  padding: 30px;
+}
+
+.smile {
+  box-shadow: 21.02px 21.02px 25px #C1C2C6, -21.02px -21.02px 25px #FFFFFF;
+  padding: 10px;
+  border-radius: 15px;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  font-weight: bold;
+}
