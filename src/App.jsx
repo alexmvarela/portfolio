@@ -2,6 +2,7 @@ import { useRef, useState } from 'react';
 import './App.css';
 import { Button, Card, CardContent, CardHeader, Carousel, CarouselItem, Dialog, Divider, IconButton } from 'ui-neumorphism';
 import 'ui-neumorphism/dist/index.css';
+import logo from './assets/fit-1.png'
 
 function App() {
 
@@ -81,7 +82,7 @@ function App() {
               <div className='col d-flex'>
                 <Card rounded={true} elevation={1} className='flex-fill d-flex flex-column' style={{ padding: '10px' }}>
                   <div className='img-container'>
-                    <img src='./assets/fit-1.png' alt='Fit Tracker' className='img-fluid' />
+                    <img src={logo} alt='Fit Tracker' className='img-fluid' />
                   </div>
                   <CardHeader><b>Fit Tracker</b></CardHeader>
                   <CardContent className='flex-grow-1' style={{ textAlign: 'left' }}>
