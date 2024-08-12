@@ -127,8 +127,8 @@ function App() {
                   </CardContent>
                   <div className='container mt-auto d-flex flex-column'>
                     <div className='d-flex justify-content-between my-4'>
-                      <Button outlined={true}><a href='https://github.com/nacho-alex/project-module-3'><i className="fa-brands fa-github fa-xl"></i> Github</a></Button>
-                      <Button outlined={true}><a href='https://fit-tracker.fly.dev'><i className="fa-solid fa-link fa-xl"></i> Link</a></Button>
+                      <a href='https://github.com/nacho-alex/project-module-3'><Button outlined={true}><i className="fa-brands fa-github fa-xl me-1"></i> Github</Button></a>
+                      <a href='https://fit-tracker.fly.dev'><Button outlined={true}><i className="fa-solid fa-link fa-xl me-1"></i> Link</Button></a>
                     </div>
                     <Button onClick={() => handleDialog('fit')} rounded={true} block={true} className='mb-4 mt-3'><i className="fa-regular fa-images fa-xl me-1"></i> Screenshots</Button>
                   </div>
@@ -152,8 +152,8 @@ function App() {
                   </CardContent>
                   <div className='container mt-auto d-flex flex-column'>
                     <div className='d-flex justify-content-between my-4'>
-                      <Button outlined={true}><a href='https://github.com/alexmvarela/project-module2-reelations'><i className="fa-brands fa-github fa-xl"></i> Github</a></Button>
-                      <Button outlined={true}><a href='https://project-module2.fly.dev'><i className="fa-solid fa-link fa-xl"></i> Link</a></Button>
+                      <a href='https://github.com/alexmvarela/project-module2-reelations'><Button outlined={true}><i className="fa-brands fa-github fa-xl me-1"></i> Github</Button></a>
+                      <a href='https://project-module2.fly.dev'><Button outlined={true}><i className="fa-solid fa-link fa-xl me-1"></i> Link</Button></a>
                     </div>
                     <Button onClick={() => handleDialog('reelations')} rounded={true} block={true} className='mb-4 mt-3'><i className="fa-regular fa-images fa-xl me-1"></i> Screenshots</Button>
                   </div>
@@ -178,8 +178,8 @@ function App() {
                   </CardContent>
                   <div className='container mt-auto d-flex flex-column'>
                     <div className='d-flex justify-content-between my-4'>
-                      <Button outlined={true}><a href='https://github.com/alexmvarela/project-game-super-mario'><i className="fa-brands fa-github fa-xl"></i> Github</a></Button>
-                      <Button outlined={true}><a href='https://alexmvarela.github.io/project-game-super-mario'><i className="fa-solid fa-link fa-xl"></i> Link</a></Button>
+                      <a href='https://github.com/alexmvarela/project-game-super-mario'><Button outlined={true}><i className="fa-brands fa-github fa-xl me-1"></i> Github</Button></a>
+                      <a href='https://alexmvarela.github.io/project-game-super-mario'><Button outlined={true}><i className="fa-solid fa-link fa-xl me-1"></i> Link</Button></a>
                     </div>
                     <Button onClick={() => handleDialog('mario')} rounded={true} block={true} className='mb-4 mt-3'><i className="fa-regular fa-images fa-xl me-1"></i> Screenshots</Button>
                   </div>
@@ -246,8 +246,8 @@ function App() {
             <Card inset={true} className={'mx-auto p-3 my-3'}>alejandromartinezvarel@gmail.com
               <IconButton text={false} size='small'style={{marginLeft: '10px'}} onClick={handleCopy}>{copied ? (<i className="fa-solid fa-check"></i>) : (<i className="fa-regular fa-copy"></i>)}</IconButton>
             </Card>
-            <Button className={'mb-3 mt-3 me-4'}><a href='https://www.linkedin.com/in/alejandromartinez-webdeveloper/'><i className="fa-brands fa-linkedin fa-xl"></i> LinkedIn</a></Button>
-            <Button><a href='https://github.com/alexmvarela'><i className="fa-brands fa-github fa-xl"></i> Github</a></Button>
+            <a  href='https://www.linkedin.com/in/alejandromartinez-webdeveloper/' className={'me-4'}><Button rounded={true} ><i className="fa-brands fa-linkedin fa-xl me-1"></i> LinkedIn</Button></a>
+            <a  href='https://github.com/alexmvarela'><Button rounded={true}><i className="fa-brands fa-github fa-xl me-1"></i> Github</Button></a>
           </CardContent>
         </Card>
       </div>
