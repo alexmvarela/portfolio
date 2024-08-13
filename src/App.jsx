@@ -242,8 +242,8 @@ function App() {
         <Card rounded={true} inset={true} style={{ paddingBottom: '10px', margin: '50px 30px'}} elevation={1}>
           <CardHeader style={{textAlign: 'center'}}><i className="bi bi-envelope-fill"></i> Contact</CardHeader>
           <Divider className={'mb-4'}></Divider>
-          <CardContent style={{textAlign: 'center'}}>
-            <Card inset={true} className={'mx-auto p-3 my-3'}>alejandromartinezvarel@gmail.com
+          <CardContent style={{textAlign: 'center', marginBottom: '20px'}}>
+            <Card inset={true} className={'mx-auto p-3 mb-4'}>alejandromartinezvarel@gmail.com
               <IconButton text={false} size='small'style={{marginLeft: '10px'}} onClick={handleCopy}>{copied ? (<i className="fa-solid fa-check"></i>) : (<i className="fa-regular fa-copy"></i>)}</IconButton>
             </Card>
             <a  href='https://www.linkedin.com/in/alejandromartinez-webdeveloper/' className={'me-4'}><Button rounded={true} ><i className="fa-brands fa-linkedin fa-xl me-1"></i> LinkedIn</Button></a>
