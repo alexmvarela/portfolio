@@ -3,37 +3,45 @@ import './App.css';
 import { Button, Card, CardContent, CardHeader, Carousel, CarouselItem, Dialog, Divider, IconButton } from 'ui-neumorphism';
 import 'ui-neumorphism/dist/index.css';
 
-import photo from './assets/photo.png';
+import photo from './assets/img/photo.png';
 
-import fit1 from './assets/fit-1.png';
-import fit2 from './assets/fit-2.png';
-import fit3 from './assets/fit-3.png';
-import fit4 from './assets/fit-4.png';
-import fit5 from './assets/fit-5.png';
-import fit6 from './assets/fit-6.png';
-import fit7 from './assets/fit-7.png';
-import fit8 from './assets/fit-8.png';
-import fit9 from './assets/fit-9.png';
-import fit10 from './assets/fit-10.png';
-import fit11 from './assets/fit-11.png';
-import fit12 from './assets/fit-12.png';
-import fit13 from './assets/fit-13.png';
-import fit14 from './assets/fit-14.png';
+import fit1 from './assets/img/fit-tracker/fit-1.png';
+import fit2 from './assets/img/fit-tracker/fit-2.png';
+import fit3 from './assets/img/fit-tracker/fit-3.png';
+import fit4 from './assets/img/fit-tracker/fit-4.png';
+import fit5 from './assets/img/fit-tracker/fit-5.png';
+import fit6 from './assets/img/fit-tracker/fit-6.png';
+import fit7 from './assets/img/fit-tracker/fit-7.png';
+import fit8 from './assets/img/fit-tracker/fit-8.png';
+import fit9 from './assets/img/fit-tracker/fit-9.png';
+import fit10 from './assets/img/fit-tracker/fit-10.png';
+import fit11 from './assets/img/fit-tracker/fit-11.png';
+import fit12 from './assets/img/fit-tracker/fit-12.png';
+import fit13 from './assets/img/fit-tracker/fit-13.png';
+import fit14 from './assets/img/fit-tracker/fit-14.png';
 
-import reelations1 from './assets/reelations-1.png';
-import reelations2 from './assets/reelations-2.png';
-import reelations3 from './assets/reelations-3.png';
-import reelations4 from './assets/reelations-4.png';
-import reelations5 from './assets/reelations-5.png';
+import reelations1 from './assets/img/reelations/reelations-1.png';
+import reelations2 from './assets/img/reelations/reelations-2.png';
+import reelations3 from './assets/img/reelations/reelations-3.png';
+import reelations4 from './assets/img/reelations/reelations-4.png';
+import reelations5 from './assets/img/reelations/reelations-5.png';
 
-import mario1 from './assets/super-mario-1.png';
-import mario2 from './assets/super-mario-2.png';
-import mario3 from './assets/super-mario-3.png';
-import mario4 from './assets/super-mario-4.png';
-import mario5 from './assets/super-mario-5.png';
-import mario6 from './assets/super-mario-6.png';
-import mario7 from './assets/super-mario-7.png';
+import mario1 from './assets/img/super-mario/super-mario-1.png';
+import mario2 from './assets/img/super-mario/super-mario-2.png';
+import mario3 from './assets/img/super-mario/super-mario-3.png';
+import mario4 from './assets/img/super-mario/super-mario-4.png';
+import mario5 from './assets/img/super-mario/super-mario-5.png';
+import mario6 from './assets/img/super-mario/super-mario-6.png';
+import mario7 from './assets/img/super-mario/super-mario-7.png';
 
+import columns1 from './assets/img/columns/columns-1.png';
+import columns2 from './assets/img/columns/columns-2.png';
+import columns3 from './assets/img/columns/columns-3.png';
+import columns4 from './assets/img/columns/columns-4.png';
+import columns5 from './assets/img/columns/columns-5.png';
+import columns6 from './assets/img/columns/columns-6.png';
+import columns7 from './assets/img/columns/columns-7.png';
+import columns8 from './assets/img/columns/columns-8.png';
 
 function App() {
 
@@ -186,6 +194,31 @@ function App() {
                 </Card>
               </div>
 
+              <div className='col d-flex'>
+                <Card rounded={true} elevation={1} className='flex-fill d-flex flex-column' style={{ padding: '10px' }}>
+                  <div className='img-container'>
+                    <img src={columns2} alt='Columns' className='img-fluid' />
+                  </div>
+                  <CardHeader><b>Columns</b></CardHeader>
+                  <CardContent className='flex-grow-1' style={{ textAlign: 'left' }}>
+                    <p>
+                      2D Tetris-like Game.<br/>
+                      Developed with Vanilla JavaScript.<br/><br/>
+                      The design is fully responsive, seamlessly adapting to different screen sizes. Additionally, the game is playable on mobile devices thanks to the implementation of touch controls, providing a smooth experience on both desktop and mobile platforms.<br/><br/>
+                      <b>Key technologies:</b> JavaScript, HTML, CSS.<br/>
+                      Project deployed on GitHub Pages.
+                    </p>
+                  </CardContent>
+                  <div className='container mt-auto d-flex flex-column'>
+                    <div className='d-flex justify-content-between my-4'>
+                      <a href='https://github.com/alexmvarela/game-columns'><Button outlined={true}><i className="fa-brands fa-github fa-xl me-1"></i> Github</Button></a>
+                      <a href='https://alexmvarela.github.io/game-columns/'><Button outlined={true}><i className="fa-solid fa-link fa-xl me-1"></i> Link</Button></a>
+                    </div>
+                    <Button onClick={() => handleDialog('columns')} rounded={true} block={true} className='mb-4 mt-3'><i className="fa-regular fa-images fa-xl me-1"></i> Screenshots</Button>
+                  </div>
+                </Card>
+              </div>
+
             </div>
           </CardContent>
         </Card>
@@ -231,6 +264,19 @@ function App() {
             <CarouselItem><img className='img-fluid h-100 object-fit-contain' src={mario5} alt='super mario'></img></CarouselItem>
             <CarouselItem><img className='img-fluid h-100 object-fit-contain' src={mario6} alt='super mario'></img></CarouselItem>
             <CarouselItem><img className='img-fluid h-100 object-fit-contain' src={mario7} alt='super mario'></img></CarouselItem>
+          </Carousel>
+        )}
+
+        {project.current === 'columns' && (
+          <Carousel className={'w-100'} showArrows hideDelimiters nextIcon={<IconButton size='small' bgColor={'rgba(255,255,255,0.5'} bordered={true} rounded={true} text={true}><i className=" fa-solid fa-chevron-right fa-2xs" /></IconButton>} prevIcon={<IconButton style={{marginBottom: '17px'}} size='small' bgColor={'rgba(255,255,255,0.5'} bordered={true} rounded={true} text={true}><i className="fa-solid fa-chevron-right fa-2xs" /></IconButton>}>
+            <CarouselItem><img className='img-fluid h-100 object-fit-contain' src={columns1} alt='columns'></img></CarouselItem>
+            <CarouselItem><img className='img-fluid h-100 object-fit-contain' src={columns2} alt='columns'></img></CarouselItem>
+            <CarouselItem><img className='img-fluid h-100 object-fit-contain' src={columns3} alt='columns'></img></CarouselItem>
+            <CarouselItem><img className='img-fluid h-100 object-fit-contain' src={columns4} alt='columns'></img></CarouselItem>
+            <CarouselItem><img className='img-fluid h-100 object-fit-contain' src={columns5} alt='columns'></img></CarouselItem>
+            <CarouselItem><img className='img-fluid h-100 object-fit-contain' src={columns6} alt='columns'></img></CarouselItem>
+            <CarouselItem><img className='img-fluid h-100 object-fit-contain' src={columns7} alt='columns'></img></CarouselItem>
+            <CarouselItem><img className='img-fluid h-100 object-fit-contain' src={columns8} alt='columns'></img></CarouselItem>
           </Carousel>
         )}
         
